@@ -21,4 +21,10 @@ public class HeroTest {
         Assertions.assertEquals(10, hero.getAge());
     }
 
+    @Test
+    public void Hero_idVariableAssignable_int(){
+        hero.setHeroId(1);
+        Assertions.assertEquals(1, hero.getHeroId());
+    }
+
 }
