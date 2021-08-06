@@ -5,6 +5,13 @@ public class Hero {
     private String weakness;
     private int age;
 
+    void Hero(String heroName, String superPower, String weakness, int age){
+        this.heroName = heroName;
+        this.superPower = superPower;
+        this.weakness = weakness;
+        this.age = age;
+    }
+
     public String getHeroName() {
         return heroName;
     }
