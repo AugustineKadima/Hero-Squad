@@ -1,3 +1,5 @@
+package modules;
+
 public class Squad {
     private String squadName;
     private String[] squadMembers = new String[5];
