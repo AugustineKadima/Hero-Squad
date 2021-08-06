@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="modules.HeroTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-06T22:32:29" hostname="sirkadima-HP-Compaq-6200-Pro-SFF-PC" time="0.022">
-  <properties/>
-  <testcase name="Hero_idVariableAssignable_int()" classname="modules.HeroTest" time="0.022"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

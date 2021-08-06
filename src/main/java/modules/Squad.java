@@ -7,6 +7,11 @@ public class Squad {
     private String cause;
     private int squadId;
 
+    void Squad(String squadName, String[] squadMembers, String cause ){
+        this.squadName = squadName;
+        this.squadMembers = squadMembers;
+        this.cause = cause;
+    }
     public String getSquadName() {
         return squadName;
     }
