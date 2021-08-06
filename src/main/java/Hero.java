@@ -44,4 +44,11 @@ public class Hero {
         this.age = age;
     }
 
+    public void createNewHero(String heroName, String superPower, String weakness, int age){
+        this.heroName = heroName;
+        this.superPower = superPower;
+        this.weakness = weakness;
+        this.age = age;
+    }
+
 }
