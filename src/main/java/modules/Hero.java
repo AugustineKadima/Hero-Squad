@@ -8,6 +8,7 @@ public class Hero {
     private String superPower;
     private String weakness;
     private int age;
+    private int id;
 
 
     void Hero(String heroName, String superPower, String weakness, int age){
@@ -49,5 +50,12 @@ public class Hero {
         this.age = age;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
 }
