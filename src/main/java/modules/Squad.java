@@ -5,7 +5,7 @@ public class Squad {
     private String squadName;
     private String[] squadMembers = new String[5];
     private String cause;
-    private int id;
+    private int squadId;
 
     public String getSquadName() {
         return squadName;
@@ -32,11 +32,11 @@ public class Squad {
         this.cause = cause;
     }
 
-    public int getId() {
-        return id;
+    public int getSquadId() {
+        return squadId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setSquadId(int squadId) {
+        this.squadId = squadId;
     }
 }

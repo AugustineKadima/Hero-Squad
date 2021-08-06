@@ -1,14 +1,12 @@
 package modules;
 
-import java.util.ArrayList;
-
 public class Hero {
 
     private String heroName;
     private String superPower;
     private String weakness;
     private int age;
-    private int id;
+    private int heroId;
 
 
     void Hero(String heroName, String superPower, String weakness, int age){
@@ -50,12 +48,12 @@ public class Hero {
         this.age = age;
     }
 
-    public int getId() {
-        return id;
+    public int getHeroId() {
+        return heroId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setHeroId(int heroId) {
+        this.heroId = heroId;
     }
 
 }
