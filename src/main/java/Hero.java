@@ -1,9 +1,12 @@
+import java.util.ArrayList;
+
 public class Hero {
 
     private String heroName;
     private String superPower;
     private String weakness;
     private int age;
+
 
     void Hero(String heroName, String superPower, String weakness, int age){
         this.heroName = heroName;
@@ -44,11 +47,5 @@ public class Hero {
         this.age = age;
     }
 
-    public void createNewHero(String heroName, String superPower, String weakness, int age){
-        this.heroName = heroName;
-        this.superPower = superPower;
-        this.weakness = weakness;
-        this.age = age;
-    }
 
 }
