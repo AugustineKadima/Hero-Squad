@@ -12,4 +12,13 @@ public class HeroTest {
         Assertions.assertEquals(true, hero instanceof Hero);
     }
 
+    @Test
+    public void Hero_variablesAssignable(){
+        hero.Hero("Kadima", "Teleporting", "Avocado", 10);
+        Assertions.assertEquals("Kadima", hero.getHeroName());
+        Assertions.assertEquals("Teleporting", hero.getSuperPower());
+        Assertions.assertEquals("Avocado", hero.getWeakness());
+        Assertions.assertEquals(10, hero.getAge());
+    }
+
 }
