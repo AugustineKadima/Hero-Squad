@@ -1,6 +1,29 @@
 {{#partial "content"}}
 
-<p>Hello Squad!</p>
+<div class="allSquads">
+<a href="/allSquads">All Squads</a>
+</div>
+<form>
+
+    <h3 class="text">New squad</h3>
+     <hr>
+  <div class="mb-3">
+    <label for="squadName" class="form-label">Squad Name</label>
+    <input type="text" class="form-control" id="squadName" name="squadName">
+  </div>
+
+  <div class="mb-3">
+    <label for="cause" class="form-label">Cause</label>
+    <select class="form-select form-control" aria-label="Default select example">
+      <option class="text text-primary"  selected>Select cause</option>
+      <option class="text text-primary" value="Fight Malaria">Fight Malaria</option>
+      <option class="text text-primary" value="Eradicate Poverty">Eradicate Poverty</option>
+      <option class="text text-primary" value="Create Jobs">Create Jobs</option>
+    </select>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 {{/partial}}
 
 {{> layout.hbs}}
