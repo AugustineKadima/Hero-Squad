@@ -24,5 +24,13 @@ public class App {
         get("/squad",(request, response) -> {
             return new ModelAndView(new HashMap<>(), "squad.hbs");
         }, new HandlebarsTemplateEngine());
+
+        get("/allSquads",(request, response) -> {
+            return new ModelAndView(new HashMap<>(), "allSquads.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("/allHeroes",(request, response) -> {
+            return new ModelAndView(new HashMap<>(), "allHeroes.hbs");
+        }, new HandlebarsTemplateEngine());
     }
 }
