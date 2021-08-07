@@ -1,6 +1,31 @@
 {{#partial "content"}}
 
-<p>Hello Hero!</p>
+<form>
+
+  <div class="mb-3">
+    <label for="heroName" class="form-label">Hero Name</label>
+    <input type="text" class="form-control" id="heroName" name="heroName">
+  </div>
+
+  <div class="mb-3">
+    <label for="superPower" class="form-label">Super Power</label>
+    <input type="text" class="form-control" id="superPower" name="superPower">
+  </div>
+
+  <div class="mb-3">
+    <label for="weakness" class="form-label">Weakness</label>
+    <input type="text" class="form-control" id="weakness" name="weakness">
+  </div>
+
+
+
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Age</label>
+    <input type="number" class="form-control" id="exampleInputPassword1">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 {{/partial}}
 
 {{> layout.hbs}}
