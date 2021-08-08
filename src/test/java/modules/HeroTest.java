@@ -28,11 +28,18 @@ public class HeroTest {
     }
 
     @Test
-    public void Hero_getCreatedHeroes_Hero(){
+    public void Hero_getCreatedHeroes_size_Hero(){
         hero.Hero("Kadima", "Teleporting", "Avocado", 10);
         hero.Hero("Samuel", "Telepathy", "Chapati", 101);
-        Assertions.assertEquals(2, hero.getCreatedHeroes().size());
+        Assertions.assertEquals(2, Hero.getCreatedHeroes().size());
 
+    }
+
+    @Test
+    public void Hero_getHeroId_heroInstantiateWithAnID_1() throws Exception{
+        Hero.clearCreatedHeroes();
+        hero.Hero("Kadima", "Teleporting", "Avocado", 10);
+        Assertions.assertEquals(1, hero.getHeroId());
     }
 
 }

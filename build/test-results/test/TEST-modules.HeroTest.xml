@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="modules.HeroTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-08T19:19:53" hostname="sirkadima-HP-Compaq-6200-Pro-SFF-PC" time="0.017">
+<testsuite name="modules.HeroTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-08T21:57:53" hostname="sirkadima-HP-Compaq-6200-Pro-SFF-PC" time="0.02">
   <properties/>
-  <testcase name="Hero_getCreatedHeroes_Hero()" classname="modules.HeroTest" time="0.017"/>
+  <testcase name="getId_postsInstantiateWithAnID_1()" classname="modules.HeroTest" time="0.02"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

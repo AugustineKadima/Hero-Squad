@@ -18,6 +18,7 @@ public class Hero {
         this.weakness = weakness;
         this.age = age;
         createdHeroes.add(this);
+        this.heroId = createdHeroes.size();
     }
 
     public String getHeroName() {
@@ -62,6 +63,10 @@ public class Hero {
 
     public static ArrayList<Hero> getCreatedHeroes() {
         return createdHeroes;
+    }
+
+    public static void clearCreatedHeroes(){
+        createdHeroes.clear();
     }
 
 
