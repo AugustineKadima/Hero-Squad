@@ -60,4 +60,9 @@ public class Hero {
         this.heroId = heroId;
     }
 
+    public static ArrayList<Hero> getCreatedHeroes() {
+        return createdHeroes;
+    }
+
+
 }
