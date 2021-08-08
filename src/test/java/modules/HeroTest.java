@@ -27,4 +27,12 @@ public class HeroTest {
         Assertions.assertEquals(1, hero.getHeroId());
     }
 
+    @Test
+    public void Hero_getCreatedHeroes_Hero(){
+        hero.Hero("Kadima", "Teleporting", "Avocado", 10);
+        hero.Hero("Samuel", "Telepathy", "Chapati", 101);
+        Assertions.assertEquals(2, hero.getCreatedHeroes().size());
+
+    }
+
 }
