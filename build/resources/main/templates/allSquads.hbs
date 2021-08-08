@@ -1,8 +1,13 @@
 {{#partial "content"}}
 
 <h3>All Squads</h3>
-<div>
-</div>
+{{#if squadName }}
+<p>{{ squadName }}</p>
+{{else}}
+  It doesn't look like you're logged in!
+{{/if}}
+
+
 {{/partial}}
 
 {{> layout.hbs}}

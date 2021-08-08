@@ -1,5 +1,7 @@
 package modules;
 
+import java.util.ArrayList;
+
 public class Hero {
 
     private String heroName;
@@ -7,6 +9,7 @@ public class Hero {
     private String weakness;
     private int age;
     private int heroId;
+    private static ArrayList<Hero> createdHeroes = new ArrayList<>();
 
 
     void Hero(String heroName, String superPower, String weakness, int age){
@@ -14,6 +17,7 @@ public class Hero {
         this.superPower = superPower;
         this.weakness = weakness;
         this.age = age;
+        createdHeroes.add(this);
     }
 
     public String getHeroName() {

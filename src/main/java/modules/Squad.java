@@ -9,8 +9,8 @@ public class Squad {
 
     void Squad(String squadName, String[] squadMembers, String cause ){
         this.squadName = squadName;
-        this.squadMembers = squadMembers;
         this.cause = cause;
+        this.squadMembers = squadMembers;
     }
     public String getSquadName() {
         return squadName;
