@@ -12,7 +12,7 @@ public class Hero {
     private static ArrayList<Hero> createdHeroes = new ArrayList<>();
 
 
-    void Hero(String heroName, String superPower, String weakness, int age){
+    public Hero(String heroName, String superPower, String weakness, int age){
         this.heroName = heroName;
         this.superPower = superPower;
         this.weakness = weakness;

@@ -1,9 +1,9 @@
 {{#partial "content"}}
 
 <h3>All Heroes</h3>
-<div>
+{{#each hero}}
 <p>{{ heroName }}</p>
-</div>
+{{/each}}
 {{/partial}}
 
 {{> layout.hb
