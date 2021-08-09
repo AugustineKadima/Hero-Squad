@@ -83,7 +83,7 @@ public class Hero {
     }
 
     public static Hero findById(int id){
-        return createdHeroes.get(id-1); //why minus 1? See if you can figure it out.
+        return createdHeroes.get(id-1);
     }
 
 
