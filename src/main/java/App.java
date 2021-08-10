@@ -6,11 +6,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static spark.Spark.*;
+import static spark.debug.DebugScreen.enableDebugScreen;
 
 
 public class App {
     public static void main(String[] args){
         staticFileLocation("/public");
+        enableDebugScreen();
+        Hero hero = new Hero("KAdima", "Flying", "Sitting", 10);
+
 
         get("/", (request, response) ->{
             return new ModelAndView(new HashMap(), "layout.hbs");
@@ -39,12 +43,8 @@ public class App {
 
         get("/allHeroes",(request, response) -> {
             Map<String, Object> model = new HashMap<>();
-            String heroName = request.queryParams("heroName");
-            String superPower = request.queryParams("superPower");
-            String weakness = request.queryParams("weakness");
-            int age = Integer.parseInt(request.queryParams("age"));
-            Hero hero = new Hero(heroName, superPower, weakness, age);
-            model.put("hero", hero);
+
+            model.put("heroes", Hero.getCreatedHeroes());
             return new ModelAndView(model, "allHeroes.hbs");
         }, new HandlebarsTemplateEngine());
 
@@ -54,7 +54,7 @@ public class App {
             String superPower = request.queryParams("superPower");
             String weakness = request.queryParams("weakness");
             int age = Integer.parseInt(request.queryParams("age"));
-            Hero hero = new Hero(heroName, superPower, weakness, age);
+//            Hero hero = new Hero(heroName, superPower, weakness, age);
             model.put("hero", hero);
             return new ModelAndView(model, "allHeroes.hbs");
         }, new HandlebarsTemplateEngine());

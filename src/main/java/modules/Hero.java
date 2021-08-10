@@ -1,6 +1,7 @@
 package modules;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class Hero {
@@ -10,7 +11,7 @@ public class Hero {
     private String weakness;
     private int age;
     private int heroId;
-    private static ArrayList<Hero> createdHeroes = new ArrayList<>();
+    public static List<Hero> createdHeroes = new ArrayList<>();
 
     @Override
     public boolean equals(Object o) {
@@ -33,6 +34,7 @@ public class Hero {
         createdHeroes.add(this);
         this.heroId = createdHeroes.size();
     }
+
 
     public String getHeroName() {
         return heroName;
@@ -74,7 +76,7 @@ public class Hero {
         this.heroId = heroId;
     }
 
-    public static ArrayList<Hero> getCreatedHeroes() {
+    public static List<Hero> getCreatedHeroes() {
         return createdHeroes;
     }
 

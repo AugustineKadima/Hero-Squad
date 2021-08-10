@@ -17,6 +17,7 @@ dependencies {
     implementation 'org.slf4j:slf4j-simple:1.7.21'
     implementation 'org.sql2o:sql2o:1.5.4'
     implementation group: 'com.h2database', name: 'h2', version: '1.4.191'
+    implementation 'com.sparkjava:spark-debug-tools:0.5'
 }
 
 test {
