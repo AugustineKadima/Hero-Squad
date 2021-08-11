@@ -5,14 +5,14 @@ import java.util.ArrayList;
 public class Squad {
 
     private String squadName;
-    private ArrayList<Squad> squadMembers = new ArrayList<>();
+    public static ArrayList<Squad> squads = new ArrayList<>();
     private String cause;
     private int squadId;
 
     public Squad(String squadName,  String cause ){
         this.squadName = squadName;
         this.cause = cause;
-        squadMembers.add(this);
+        squads.add(this);
     }
     public String getSquadName() {
         return squadName;
@@ -23,12 +23,8 @@ public class Squad {
     }
 
 
-    public ArrayList<Squad> getSquadMembers() {
-        return squadMembers;
-    }
-
-    public void setSquadMembers(ArrayList<Squad> squadMembers) {
-        this.squadMembers = squadMembers;
+    public static ArrayList<Squad> getSquads() {
+        return squads;
     }
 
     public String getCause() {

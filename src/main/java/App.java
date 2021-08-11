@@ -28,22 +28,8 @@ public class App {
             return new ModelAndView(new HashMap<>(), "hero.hbs");
         }, new HandlebarsTemplateEngine());
 
-        get("/squad",(request, response) -> {
-            return new ModelAndView(new HashMap<>(), "squad.hbs");
-        }, new HandlebarsTemplateEngine());
-
-//        get("/allSquads",(request, response) -> {
-//            Map<String, Object> model = new HashMap<String, Object>();
-//            String squadName = request.queryParams("squadName");
-//            String cause = request.queryParams("cause");
-//            model.put("squadName", squadName);
-//
-//            return new ModelAndView(model, "allSquads.hbs");
-//        }, new HandlebarsTemplateEngine());
-
         get("/allHeroes",(request, response) -> {
             Map<String, Object> model = new HashMap<>();
-
             model.put("heroes", Hero.getCreatedHeroes());
             return new ModelAndView(model, "allHeroes.hbs");
         }, new HandlebarsTemplateEngine());
@@ -60,7 +46,25 @@ public class App {
             return new ModelAndView(model, "allHeroes.hbs");
         }, new HandlebarsTemplateEngine());
 
+        get("/squad",(request, response) -> {
+            return new ModelAndView(new HashMap<>(), "squad.hbs");
+        }, new HandlebarsTemplateEngine());
 
+        get("/allSquads",(request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+            model.put("squad", Squad.getSquads());
+            return new ModelAndView(model, "allSquads.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        post("/allSquads",(request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            String squadName = request.queryParams("squadName");
+            String cause = request.queryParams("cause");
+            Squad squad = new Squad(squadName, cause);
+            ArrayList<Squad> squadObj = Squad.getSquads();
+            model.put("squad", squadObj);
+            return new ModelAndView(model, "allSquads.hbs");
+        }, new HandlebarsTemplateEngine());
 
     }
 }
