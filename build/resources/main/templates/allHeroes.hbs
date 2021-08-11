@@ -1,10 +1,19 @@
 {{#partial "content"}}
 
 <h3>All Heroes</h3>
-
+<div class="card-wrapper" >
 {{#each hero}}
-<p>{{ heroName }}</p>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h4 class="card-title text text-primary">Name:<strong> {{ heroName }}</strong></h4>
+    <p class="card-text">Super power: <strong>{{ superPower }}</strong></p>
+    <p class="card-text">Weakness:<strong> {{ weakness }}</strong></p>
+    <p class="card-text">Age: <strong>{{ age }}</strong></p>
+  </div>
+</div>
+
 {{/each}}
+</div>
 {{/partial}}
 
 {{> layout.hbs}}

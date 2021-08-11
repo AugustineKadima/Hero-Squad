@@ -1,3 +1,5 @@
+modules/DatabaseRule.java
+ modules.DatabaseRule
 modules/HeroTest.java
  modules.HeroTest
 modules/SquadTest.java
