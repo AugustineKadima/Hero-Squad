@@ -42,4 +42,5 @@ public class Squad {
     public void setSquadId(int squadId) {
         this.squadId = squadId;
     }
+
 }

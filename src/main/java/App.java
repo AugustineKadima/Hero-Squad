@@ -66,5 +66,7 @@ public class App {
             return new ModelAndView(model, "allSquads.hbs");
         }, new HandlebarsTemplateEngine());
 
+
+
     }
 }
