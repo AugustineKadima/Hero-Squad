@@ -1,4 +1,5 @@
 import modules.Hero;
+import modules.Squad;
 import spark.ModelAndView;
 import spark.template.handlebars.HandlebarsTemplateEngine;
 
@@ -31,14 +32,14 @@ public class App {
             return new ModelAndView(new HashMap<>(), "squad.hbs");
         }, new HandlebarsTemplateEngine());
 
-        get("/allSquads",(request, response) -> {
-            Map<String, Object> model = new HashMap<String, Object>();
-            String squadName = request.queryParams("squadName");
-            String cause = request.queryParams("cause");
-            model.put("squadName", squadName);
-            model.put("cause", cause);
-            return new ModelAndView(model, "allSquads.hbs");
-        }, new HandlebarsTemplateEngine());
+//        get("/allSquads",(request, response) -> {
+//            Map<String, Object> model = new HashMap<String, Object>();
+//            String squadName = request.queryParams("squadName");
+//            String cause = request.queryParams("cause");
+//            model.put("squadName", squadName);
+//
+//            return new ModelAndView(model, "allSquads.hbs");
+//        }, new HandlebarsTemplateEngine());
 
         get("/allHeroes",(request, response) -> {
             Map<String, Object> model = new HashMap<>();

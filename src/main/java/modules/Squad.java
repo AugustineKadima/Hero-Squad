@@ -1,16 +1,18 @@
 package modules;
 
+import java.util.ArrayList;
+
 public class Squad {
 
     private String squadName;
-    private String[] squadMembers = new String[5];
+    private ArrayList<Squad> squadMembers = new ArrayList<>();
     private String cause;
     private int squadId;
 
-    void Squad(String squadName, String[] squadMembers, String cause ){
+    public Squad(String squadName,  String cause ){
         this.squadName = squadName;
         this.cause = cause;
-        this.squadMembers = squadMembers;
+        squadMembers.add(this);
     }
     public String getSquadName() {
         return squadName;
@@ -21,11 +23,11 @@ public class Squad {
     }
 
 
-    public String[] getSquadMembers() {
+    public ArrayList<Squad> getSquadMembers() {
         return squadMembers;
     }
 
-    public void setSquadMembers(String[] squadMembers) {
+    public void setSquadMembers(ArrayList<Squad> squadMembers) {
         this.squadMembers = squadMembers;
     }
 

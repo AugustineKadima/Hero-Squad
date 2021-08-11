@@ -1,11 +1,17 @@
 {{#partial "content"}}
 
 <h3>All Squads</h3>
-{{#if squadName }}
-<p>{{ squadName }}</p>
-{{else}}
-  It doesn't look like you're logged in!
-{{/if}}
+<div class="card-wrapper" >
+{{#each hero}}
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h4 class="card-title text text-primary">Name:<strong> {{ squadName }}</strong></h4>
+    <p class="card-text">Super power: <strong>{{ cause }}</strong></p>
+  </div>
+</div>
+
+{{/each}}
+</div>
 
 
 {{/partial}}

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="modules.SquadTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-08-11T19:56:36" hostname="sirkadima-HP-Compaq-6200-Pro-SFF-PC" time="0.002">
+<testsuite name="modules.SquadTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-11T21:11:09" hostname="sirkadima-HP-Compaq-6200-Pro-SFF-PC" time="0.018">
   <properties/>
-  <testcase name="Squad_SquadCorrectlyCreated()" classname="modules.SquadTest" time="0.0"/>
-  <testcase name="Squad_squadIdAssignable()" classname="modules.SquadTest" time="0.0"/>
-  <testcase name="Squad_variablesAssignable()" classname="modules.SquadTest" time="0.0"/>
+  <testcase name="Squad_squadIdAssignable()" classname="modules.SquadTest" time="0.018"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -15,6 +15,7 @@ public class Hero {
     private int heroId;
     public static List<Hero> createdHeroes = new ArrayList<>();
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
