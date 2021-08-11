@@ -1,8 +1,12 @@
 package modules;
 
 import modules.Hero;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.sql2o.Connection;
+import org.sql2o.Sql2o;
 
 public class HeroTest {
 
@@ -44,5 +48,10 @@ public class HeroTest {
         Hero hero = new Hero("Kadima", "Teleporting", "Avocado", 10);
         Assertions.assertEquals(1, hero.getHeroId());
     }
+
+
+
+
+
 
 }

@@ -2,18 +2,17 @@ import modules.Hero;
 import spark.ModelAndView;
 import spark.template.handlebars.HandlebarsTemplateEngine;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import static spark.Spark.*;
-import static spark.debug.DebugScreen.enableDebugScreen;
 
 
 public class App {
     public static void main(String[] args){
         staticFileLocation("/public");
-        enableDebugScreen();
-        Hero hero = new Hero("KAdima", "Flying", "Sitting", 10);
 
 
         get("/", (request, response) ->{
@@ -49,13 +48,14 @@ public class App {
         }, new HandlebarsTemplateEngine());
 
         post("/allHeroes",(request, response) -> {
-            Map<String, Object> model = new HashMap<>();
+            Map<String, Object> model = new HashMap<String, Object>();
             String heroName = request.queryParams("heroName");
             String superPower = request.queryParams("superPower");
             String weakness = request.queryParams("weakness");
             int age = Integer.parseInt(request.queryParams("age"));
-//            Hero hero = new Hero(heroName, superPower, weakness, age);
-            model.put("hero", hero);
+            Hero hero1 = new Hero(heroName, superPower, weakness, age);
+            List<Hero> heroObj = Hero.getCreatedHeroes();
+            model.put("hero", heroObj);
             return new ModelAndView(model, "allHeroes.hbs");
         }, new HandlebarsTemplateEngine());
 

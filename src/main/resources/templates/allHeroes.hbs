@@ -1,10 +1,10 @@
 {{#partial "content"}}
 
 <h3>All Heroes</h3>
-{{heroes}}
-{{!-- {{#each heroes}} --}}
-{{!-- <p>{{ heroName }}</p> --}}
-{{!-- {{/each}} --}}
+
+{{#each hero}}
+<p>{{ heroName }}</p>
+{{/each}}
 {{/partial}}
 
 {{> layout.hbs}}

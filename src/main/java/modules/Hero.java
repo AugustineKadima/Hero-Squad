@@ -1,5 +1,7 @@
 package modules;
 
+import org.sql2o.Connection;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -33,6 +35,18 @@ public class Hero {
         this.age = age;
         createdHeroes.add(this);
         this.heroId = createdHeroes.size();
+    }
+
+    public void save() {
+        try(Connection con = DB.sql2o.open()) {
+            String sql = "INSERT INTO heroes (hero_name, super_power, weakness, age) VALUES (:hero_name, :super_power, :weakness, :age)";
+            con.createQuery(sql)
+                    .addParameter("hero_name", this.heroName)
+                    .addParameter("super_power", this.superPower)
+                    .addParameter("weakness", this.weakness)
+                    .addParameter("age", this.age)
+                    .executeUpdate();
+        }
     }
 
 
