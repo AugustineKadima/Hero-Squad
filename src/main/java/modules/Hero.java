@@ -16,18 +16,18 @@ public class Hero {
     public static List<Hero> createdHeroes = new ArrayList<>();
 
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Hero hero = (Hero) o;
-        return age == hero.age && heroId == hero.heroId && Objects.equals(heroName, hero.heroName) && Objects.equals(superPower, hero.superPower) && Objects.equals(weakness, hero.weakness);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(heroName, superPower, weakness, age, heroId);
-    }
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (o == null || getClass() != o.getClass()) return false;
+//        Hero hero = (Hero) o;
+//        return age == hero.age && heroId == hero.heroId && Objects.equals(heroName, hero.heroName) && Objects.equals(superPower, hero.superPower) && Objects.equals(weakness, hero.weakness);
+//    }
+//
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(heroName, superPower, weakness, age, heroId);
+//    }
 
     public Hero(String heroName, String superPower, String weakness, int age){
         this.heroName = heroName;

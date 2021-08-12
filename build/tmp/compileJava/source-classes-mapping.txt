@@ -1,8 +1,8 @@
 modules/DB.java
  modules.DB
-modules/Hero.java
- modules.Hero
 modules/Squad.java
  modules.Squad
 App.java
  App
+modules/Hero.java
+ modules.Hero
