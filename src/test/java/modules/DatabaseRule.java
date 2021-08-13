@@ -17,19 +17,19 @@ public class DatabaseRule extends ExternalResource {
     public DatabaseRule(String path) {
         super(path);
     }
+//
+//    @BeforeAll
+//
+//    public void before() throws Throwable {
+//        Sql2o sql2o = new Sql2o("jdbc:postgresql://localhost:5432/hero_test", "sirkadima",
+//                "kadima123");
+//    }
 
-    @BeforeAll
-
-    public void before() throws Throwable {
-        Sql2o sql2o = new Sql2o("jdbc:postgresql://localhost:5432/hero_test", "sirkadima",
-                "kadima123");
-    }
-
-    @AfterAll
-    public void after() {
-        try(Connection con= DB.sql2o.open()) {
-            String deleteHeroesQuery = "DELETE FROM heroes *";
-            con.createQuery(deleteHeroesQuery).executeUpdate();
-        }
-    }
+//    @AfterAll
+//    public void after() {
+//        try(Connection con= DB.sql2o.open()) {
+//            String deleteHeroesQuery = "DELETE FROM heroes *";
+//            con.createQuery(deleteHeroesQuery).executeUpdate();
+//        }
+//    }
 }

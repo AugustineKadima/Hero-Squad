@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="modules.HeroTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-08-12T18:33:49" hostname="sirkadima-HP-Compaq-6200-Pro-SFF-PC" time="0.028">
+  <properties/>
+  <testcase name="Hero_getCreatedHeroes_sizeEquals2_Hero()" classname="modules.HeroTest" time="0.021"/>
+  <testcase name="Hero_variablesAssignable()" classname="modules.HeroTest" time="0.002"/>
+  <testcase name="Hero_objectCorretlyCreated()" classname="modules.HeroTest" time="0.001"/>
+  <testcase name="Hero_idVariableAssignable_int()" classname="modules.HeroTest" time="0.001"/>
+  <testcase name="Hero_getHeroId_heroInstantiateWithAnID_1()" classname="modules.HeroTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

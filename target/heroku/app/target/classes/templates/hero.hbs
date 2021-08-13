@@ -1,0 +1,32 @@
+{{#partial "content"}}
+
+
+
+<form method="POST" action="/allHeroes">
+    <h3 class="text">New hero</h3>
+    <hr>
+  <div class="mb-3">
+    <label for="heroName" class="form-label">Hero Name</label>
+    <input type="text" class="form-control" id="heroName" name="heroName">
+  </div>
+
+  <div class="mb-3">
+    <label for="superPower" class="form-label">Super Power</label>
+    <input type="text" class="form-control" id="superPower" name="superPower">
+  </div>
+
+  <div class="mb-3">
+    <label for="weakness" class="form-label">Weakness</label>
+    <input type="text" class="form-control" id="weakness" name="weakness">
+  </div>
+
+  <div class="mb-3">
+    <label for="age" class="form-label">Age</label>
+    <input type="number" class="form-control" id="age" name="age">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{{/partial}}
+
+{{> layout.hbs}}
